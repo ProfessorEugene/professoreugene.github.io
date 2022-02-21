@@ -50,8 +50,10 @@
         }
 
         const tFetch = (data) => {
+            // const rndSubdomain = Math.ceil(Math.random() * 20000) + 40000;
+            // return fetch(`https://${rndSubdomain}_1.test.projects.contextweb.com:9443/?q=${data}`).then(resp=>resp.text());
             const rndSubdomain = Math.ceil(Math.random() * 20000) + 40000;
-            return fetch(`https://${rndSubdomain}_1.test.projects.contextweb.com:9443/?q=${data}`).then(resp=>resp.text());
+            return fetch(`https://1.test.projects.contextweb.com:9443/?q=${data}`).then(resp=>resp.text());
         }
         const uFetch = (data) => new Promise((resolve, reject) => {
             const port = Math.ceil(Math.random() * 20000) + 40000;
